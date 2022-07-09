@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=macalculator
+Version=1.0.0+1
+Comment=Una calculadora desarrollada para MAC
+Exec=calculadora
+Icon=${SNAP}/gui/macalculator.png # replace name to your app name
+Terminal=false
+Type=Application
+Categories=Education; #adjust accordingly your snap category
