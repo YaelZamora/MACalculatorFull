@@ -17,10 +17,7 @@ apps:
   macalculator:
     command: macalculator
     extensions: [flutter-master] # Where "master" defines which Flutter channel to use for the build
-    plugs:
-    - network
-    slots:
-      - dbus-macalculator
+    
 parts:
   super-cool-app:
     source: .
