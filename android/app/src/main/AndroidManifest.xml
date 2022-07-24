@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.macalculator">
+    package="com.technologyfantasy.macalculator">
    <application
-        android:label="macalculator"
+        android:label="MACalculator"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
