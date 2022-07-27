@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:macalculator/screens/secundaria/primer_a%C3%B1o_page.dart';
+import 'package:macalculator/screens/workingon_page.dart';
 
 class SecundariaPage extends StatelessWidget {
   SecundariaPage({Key? key}) : super(key: key);
@@ -9,6 +11,12 @@ class SecundariaPage extends StatelessWidget {
     'Tercer año',
   ];
 
+  final List<Widget> _paginas = [
+    SecundariaUno(),
+    const WorkingOnPage(),
+    const WorkingOnPage(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
@@ -16,6 +24,12 @@ class SecundariaPage extends StatelessWidget {
         title: Text(
           _grados.elementAt(index),
           style: const TextStyle(color: Colors.white),
+        ),
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (BuildContext context) => _paginas.elementAt(index),
+          ),
         ),
       ),
       itemCount: _grados.length,

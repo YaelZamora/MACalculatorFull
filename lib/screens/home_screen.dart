@@ -14,10 +14,9 @@ class _HomePageState extends State<HomePage> {
 
   final List<Widget> paginas = [
     FirstYearPage(),
+    SecundariaPage(),
     const WorkingOnPage(),
     const WorkingOnPage(),
-    const WorkingOnPage(),
-    //SecundariaPage(),
     //PreparatoriaPage(),
     //UniversidadPage(),
   ];

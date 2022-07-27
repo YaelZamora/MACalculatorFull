@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TextFieldNumber extends StatelessWidget {
-  TextFieldNumber({
+  const TextFieldNumber({
     Key? key,
     required this.controller,
     required this.hint,

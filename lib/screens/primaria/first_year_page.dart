@@ -80,7 +80,7 @@ class FirstYearPage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (BuildContext context) => PorcentajePage(),
+                  builder: (BuildContext context) => const PorcentajePage(),
                 ),
               );
             }

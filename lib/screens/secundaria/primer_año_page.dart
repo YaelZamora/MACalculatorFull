@@ -1,19 +1,20 @@
-import 'package:macalculator/screens/primaria/areas/areas.dart';
 import 'package:flutter/material.dart';
+import 'package:macalculator/screens/secundaria/secundaria.dart';
+import 'package:macalculator/screens/workingon_page.dart';
 
-class AreaPage extends StatelessWidget {
-  AreaPage({Key? key}) : super(key: key);
+class SecundariaUno extends StatelessWidget {
+  SecundariaUno({Key? key}) : super(key: key);
 
-  final List<String> _areas = [
-    'Rectángulo',
-    'Círculo',
-    'Triángulo',
+  final List<String> _operaciones = [
+    'Raíz Cuadrada',
+    'Ecuación de Primer Grado',
+    'Fracciones',
   ];
 
-  final List<Widget> _paginas = const [
-    RectanguloArea(),
-    CirculoArea(),
-    TrianguloArea(),
+  final List<Widget> _paginas = [
+    const RaizCuadradaPage(),
+    const WorkingOnPage(),
+    FraccionesPage(),
   ];
 
   @override
@@ -26,10 +27,10 @@ class AreaPage extends StatelessWidget {
       backgroundColor: const Color.fromRGBO(32, 44, 86, 1),
       body: Center(
         child: ListView.builder(
-          itemCount: 3,
+          itemCount: _operaciones.length,
           itemBuilder: (BuildContext context, int index) => ListTile(
             title: Text(
-              _areas.elementAt(index),
+              _operaciones.elementAt(index),
               style: const TextStyle(color: Colors.white),
             ),
             onTap: () => Navigator.push(

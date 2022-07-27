@@ -1,18 +1,18 @@
-import 'package:macalculator/widgets/textfield.dart';
-import 'package:flutter/material.dart';
+import 'dart:math';
 
-class PorcentajePage extends StatefulWidget {
-  const PorcentajePage({Key? key}) : super(key: key);
+import 'package:flutter/material.dart';
+import 'package:macalculator/widgets/textfield.dart';
+
+class RaizCuadradaPage extends StatefulWidget {
+  const RaizCuadradaPage({Key? key}) : super(key: key);
 
   @override
-  State<PorcentajePage> createState() => _PorcentajePageState();
+  State<RaizCuadradaPage> createState() => _RaizCuadradaPageState();
 }
 
-class _PorcentajePageState extends State<PorcentajePage> {
+class _RaizCuadradaPageState extends State<RaizCuadradaPage> {
   final TextEditingController _controller = TextEditingController();
-  final TextEditingController _controller2 = TextEditingController();
-  double _base = 0.0;
-  double _total = 0.0;
+  double _raiz = 0.0;
   double _resultado = 0.0;
 
   @override
@@ -27,21 +27,15 @@ class _PorcentajePageState extends State<PorcentajePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            TextFieldNumber(controller: _controller, hint: 'Primer número'),
-            const SizedBox(
-              height: 30,
-              child: Icon(
-                Icons.percent,
-                color: Colors.white,
-              ),
+            TextFieldNumber(
+              controller: _controller,
+              hint: 'Raiz',
             ),
-            TextFieldNumber(controller: _controller2, hint: 'Segundo número'),
             ElevatedButton(
               onPressed: () {
                 setState(() {
-                  _base = double.parse(_controller.text);
-                  _total = double.parse(_controller2.text);
-                  _resultado = (_base * _total) / 100;
+                  _raiz = double.parse(_controller.text);
+                  _resultado = sqrt(_raiz);
                 });
               },
               child: const Text('='),
