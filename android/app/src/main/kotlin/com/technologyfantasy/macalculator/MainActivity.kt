@@ -1,4 +1,4 @@
-package com.technologyfantasy.macalculator
+package com.TechnologyFantasy.macalculator
 
 import io.flutter.embedding.android.FlutterActivity
 

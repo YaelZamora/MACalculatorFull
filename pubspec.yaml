@@ -48,10 +48,10 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_launcher_icons:
 flutter_icons:
-  android: "launcher_icon"
-  ios: true
-  image_path: "assets/icon/macalculator.png"
-  adaptive_icon_background: "assets/icon/macalculator.png"
+    android: "launcher_icon"
+    ios: true
+    image_path: "assets/icono.png"
+    adaptive_icon_background: "assets/icono.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

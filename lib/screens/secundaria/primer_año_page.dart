@@ -21,6 +21,10 @@ class SecundariaUno extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: const Text(
+          'Primer año',
+          style: TextStyle(color: Colors.white),
+        ),
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),

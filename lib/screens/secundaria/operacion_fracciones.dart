@@ -40,6 +40,7 @@ class _OperacionesFraccionesState extends State<OperacionesFracciones> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text('${widget.nombre} de fracciones', style: const TextStyle(color: Colors.white),),
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),
@@ -48,9 +49,15 @@ class _OperacionesFraccionesState extends State<OperacionesFracciones> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Numeradores(
-              controller: _controller,
-              controller2: _controller2,
+            Row(
+              children: [
+                const Spacer(),
+                Numeradores(
+                  controller: _controller,
+                  controller2: _controller2,
+                ),
+                const Spacer(),
+              ],
             ), //Numeradores
             Icon(
               widget.nombre == 'Suma'
@@ -62,9 +69,15 @@ class _OperacionesFraccionesState extends State<OperacionesFracciones> {
                           : _iconos.elementAt(3),
               color: Colors.white,
             ),
-            Denominadores(
-              controller3: _controller3,
-              controller4: _controller4,
+            Row(
+              children: [
+                const Spacer(),
+                Denominadores(
+                  controller3: _controller3,
+                  controller4: _controller4,
+                ),
+                const Spacer(),
+              ],
             ), //Denominadores
             ElevatedButton(
               onPressed: () {
