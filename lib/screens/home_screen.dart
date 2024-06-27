@@ -34,14 +34,14 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         backgroundColor: const Color.fromRGBO(172, 150, 90, 1),
-        actions: [
+        /*actions: [
           IconButton(
               onPressed: () {},
               icon: const Icon(
                 Icons.more_horiz,
                 color: Color.fromRGBO(32, 44, 86, 1),
               ))
-        ],
+        ],*/
       ),
       body: paginas[index],
       bottomNavigationBar: BottomNavigationBar(
