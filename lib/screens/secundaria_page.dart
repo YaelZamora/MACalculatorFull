@@ -7,14 +7,14 @@ class SecundariaPage extends StatelessWidget {
 
   final List<String> _grados = [
     'Primer año',
-    'Segundo año',
-    'Tercer año',
+    //'Segundo año',
+    //'Tercer año',
   ];
 
   final List<Widget> _paginas = [
     SecundariaUno(),
-    const WorkingOnPage(),
-    const WorkingOnPage(),
+    //const WorkingOnPage(),
+    //const WorkingOnPage(),
   ];
 
   @override

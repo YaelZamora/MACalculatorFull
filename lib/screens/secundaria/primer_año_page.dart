@@ -7,13 +7,13 @@ class SecundariaUno extends StatelessWidget {
 
   final List<String> _operaciones = [
     'Raíz Cuadrada',
-    'Ecuación de Primer Grado',
+    //'Ecuación de Primer Grado',
     'Fracciones',
   ];
 
   final List<Widget> _paginas = [
     const RaizCuadradaPage(),
-    const WorkingOnPage(),
+    //const WorkingOnPage(),
     FraccionesPage(),
   ];
 

@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: const Color.fromRGBO(32, 44, 86, 1),
       appBar: AppBar(
         title: const Text(
-          'MACalculator',
+          'Calculator',
           style: TextStyle(
             color: Color.fromRGBO(32, 44, 86, 1),
             fontWeight: FontWeight.bold,
