@@ -47,6 +47,14 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
   flutter_launcher_icons:
+  msix:
+
+msix_config:
+  display_name: MACalculator
+  publisher_display_name: Technology Fantasy
+  identity_name: company.technologyfantasy.macalculator
+  msix_version: 1.0.0.0
+
 flutter_icons:
     android: "launcher_icon"
     ios: true
