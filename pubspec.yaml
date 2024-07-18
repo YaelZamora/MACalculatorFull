@@ -60,6 +60,10 @@ flutter_icons:
     ios: true
     image_path: "assets/icono.png"
     adaptive_icon_background: "assets/icono.png"
+    windows:
+      generate: true
+      image_path: "assets/icono.png"
+      icon_size: 48
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
