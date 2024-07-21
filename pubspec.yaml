@@ -50,10 +50,12 @@ dev_dependencies:
   msix:
 
 msix_config:
-  display_name: MACalculator
+  display_name: MathCalculator
   publisher_display_name: Technology Fantasy
-  identity_name: company.technologyfantasy.macalculator
+  identity_name: TechnologyFantasy.MathCalculator
+  publisher: CN=8A873600-BB38-45D7-B4BE-609EA001C9C3
   msix_version: 1.0.0.0
+  store: true
 
 flutter_icons:
     android: "launcher_icon"
