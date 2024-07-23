@@ -54,7 +54,8 @@ msix_config:
   publisher_display_name: Technology Fantasy
   identity_name: TechnologyFantasy.MathCalculator
   publisher: CN=8A873600-BB38-45D7-B4BE-609EA001C9C3
-  msix_version: 1.0.0.0
+  logo_path: C:\Users\yaelj\Documents\MACalculatorFull\assets\icono.png
+  msix_version: 1.0.5.0
   store: true
 
 flutter_icons:

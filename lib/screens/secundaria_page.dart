@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:macalculator/screens/secundaria/primer_a%C3%B1o_page.dart';
-import 'package:macalculator/screens/workingon_page.dart';
 
 class SecundariaPage extends StatelessWidget {
   SecundariaPage({Key? key}) : super(key: key);

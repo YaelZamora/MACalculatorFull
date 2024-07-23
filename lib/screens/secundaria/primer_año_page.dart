@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:macalculator/screens/secundaria/secundaria.dart';
-import 'package:macalculator/screens/workingon_page.dart';
 
 class SecundariaUno extends StatelessWidget {
   SecundariaUno({Key? key}) : super(key: key);

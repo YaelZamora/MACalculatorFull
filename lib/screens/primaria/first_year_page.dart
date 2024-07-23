@@ -41,10 +41,10 @@ class FirstYearPage extends StatelessWidget {
             _funciones.elementAt(index),
             style: const TextStyle(color: Colors.white),
           ),
-          /*trailing: Icon(
+          trailing: Icon(
             _iconos.elementAt(index),
             color: Colors.white,
-          ),*/
+          ),
           onTap: () {
             if (index < 4) {
               Navigator.push(
